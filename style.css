@@ -1,0 +1,53 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-image: url("img/background.jpg");
+}
+
+.logo {
+    width: 200px;
+    height: 150px;
+}
+
+.price {
+  color:rgb(10, 112, 112);
+  font-size: xx-large;
+  font-weight: bold;
+}
+.fw-light {
+  color: rgb(10, 112, 112);
+  font-size: 4rem;
+}
+.btn-chonmon {
+  font-size: 1.5em;
+}
+.cart-column {
+  margin-right: 0em;
+}
+.cart-quantity {
+  width: 20%;
+}
+.btn-danger {
+  color: white;
+  background-color: #eb5757;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.btn-danger:hover {
+  background-color: #cc4c4c;
+}
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56ccf2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
