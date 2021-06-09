@@ -13,30 +13,6 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Home</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="chonban.html">Chọn bàn</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="chonmon.html">Chọn món</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-    
     <main>
         <section class="py-5 text-center container">
             <div class="row py-lg-5">
@@ -49,238 +25,173 @@
         <!-- <h1 style="text-align: center; color: rgb(49, 2, 6); font-weight: bold; font-size: 3em;">MENU</h1> -->
         <div class="album py-5 bg-light">
             <div class="container">
-
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 flex-wrap">
                     <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="img/Burrito.jpg" class="bd-placeholder-img card-img-top" width="100%"
-                                height="225 alt="">
-    
-                            <div class=" card-body">
-                            <h2 style="text-align: center; font-weight: bolder; color: rgb(49, 2, 6);">BURRITO</h2>
-                            <p class="card-text">A Burrito is a dish in Mexican and Tex-Mex cuisine consisting of a
-                                flour tortilla wrapped into a sealed cylindrical shape.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button"
-                                        class="btn btn-sm btn-outline-primary btn-chonmon">Thêm</button>
+                        <div class="card shadow-sm h-100">
+                            <img src="img/Burrito.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="">
+                            <div class=" card-body mb-5">
+                                <h2 style="text-align: center; font-weight: bolder; color: rgb(49, 2, 6);">BURRITO</h2>
+                                <p class="card-text">A Burrito is a dish in Mexican and Tex-Mex cuisine consisting of a
+                                    flour tortilla wrapped into a sealed cylindrical shape.</p>
+                                <div class="d-flex position-absolute bottom-0 w-100 justify-content-between align-items-center" style="left: 0; padding: 20px;">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary btn-chonmon">Thêm</button>
+                                    </div>
+                                    <small class="price">30.000</small>
                                 </div>
-                                <small class="price">30.000</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm h-100">
+                            <img src="img/tacos.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="">
+                            <div class=" card-body mb-5">
+                                <h2 style="text-align: center; font-weight: bolder; color: rgb(49, 2, 6);">TACO</h2>
+                                <p class="card-text">A Taco is a traditional Mexican dish consisting of a small hand-sized corn or wheat
+                                    tortilla topped with a filling.</p>
+                                <div class="d-flex position-absolute bottom-0 w-100 justify-content-between align-items-center" style="left: 0; padding: 20px;">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary btn-chonmon">Thêm</button>
+                                    </div>
+                                    <small class="price">30.000</small>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="img/Enchiladas.jpg" class="bd-placeholder-img card-img-top" width="100%"
-                            height="225 alt="">
+            </div>
+        </div>
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <h1 style="text-align: center;"></h1>
+                    <h1 style="text-align: center; color: rgb(49, 2, 6); font-weight: bold; margin-top: 1.5em;">Giỏ hàng</h1>
+                    <table class="table" style="font-size: 1.5em;">
+                        <thead class="thead-dark" style="background-color: rgb(10, 112, 112); color: white;">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Tên</th>
+                                <th scope="col" style="width: 33%;">Giá</th>
+                                <th scope="col">Số lượng</th>
+                                <th scope="col">Công cụ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Burrito</td>
+                                <td>30.000</td>
+                                <td class="cart-quantity cart-column">
+                                    <input class="cart-quantity-input form-control" type="number" value="1">
+                                </td>
+                                <td>
+                                    <button class="btn btn-danger" type="button">Xóa</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Enchilada</td>
+                                <td>50.000</td>
+                                <td class="cart-quantity cart-column">
+                                    <input class="cart-quantity-input form-control" type="number" value="1">
+                                </td>
+                                <td>
+                                    <button class="btn btn-danger" type="button">Xóa</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Mollete</td>
+                                <td>35.000</td>
+                                <td class="cart-quantity cart-column">
+                                    <input class="cart-quantity-input form-control" type="number" value="1">
+                                </td>
+                                <td>
+                                    <button class="btn btn-danger" type="button">Xóa</button>
+                                </td>
+                            </tr>
+                        </tbody>
 
-                        <div class=" card-body">
-                        <h2 style="text-align: center; font-weight: bolder; color: rgb(49, 2, 6);">ENCHILADA</h2>
-                        <p class="card-text">An Enchilada is a corn tortilla rolled around a filling and covered with a
-                            savory sauce. Originally from Mexican cuisine.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-primary btn-chonmon">Thêm</button>
-                            </div>
-                            <small class="price">50.000</small>
-                        </div>
+                    </table>
+                    <div class="w-100">
+                        <button type="button" class="float-end btn btn-lg btn-outline-success" style="font-size: 1.3em;">Đặt món</button>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="img/Mollete.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225 alt="">
-
-                        <div class=" card-body">
-                    <h2 style="text-align: center; font-weight: bolder; color: rgb(49, 2, 6);">MOLLETE</h2>
-                    <p class="card-text">A Mollete is a type of bread in Spanish cuisine, or an open-faced sandwich with
-                        beans and cheese in Mexican cuisine.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-primary btn-chonmon">Thêm</button>
-                        </div>
-                        <small class="price">35.000</small>
-                    </div>
-                </div>
-            </div>
         </div>
-
-        <div class="col">
-            <div class="card shadow-sm">
-                <img src="img/Quesadillas.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225 alt="">
-
-                        <div class=" card-body">
-                <h2 style="text-align: center; font-weight: bolder; color: rgb(49, 2, 6);">QUESSADILLA</h2>
-                <p class="card-text">A Quesadilla is a Mexican dish consisting of a thin dough or tortilla that is
-                    filled primarily with cheese, and sometimes meats, spices.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-primary btn-chonmon">Thêm</button>
-                    </div>
-                    <small class="price">45.000</small>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="col">
-            <div class="card shadow-sm">
-                <img src="img/fajitas.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225 alt="">
-
-                        <div class=" card-body">
-                <h2 style="text-align: center; font-weight: bolder; color: rgb(49, 2, 6);">FAJITA</h2>
-                <p class="card-text">A Fajita in Tex-Mex is any stripped grilled meat with stripped peppers and onions
-                    that is usually served on a flour or corn tortilla.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-primary btn-chonmon">Thêm</button>
-                    </div>
-                    <small class="price">50.000</small>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="col">
-            <div class="card shadow-sm">
-                <img src="img/tacos.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225 alt="">
-
-                        <div class=" card-body">
-                <h2 style="text-align: center; font-weight: bolder; color: rgb(49, 2, 6);">TACO</h2>
-                <p class="card-text">A Taco is a traditional Mexican dish consisting of a small hand-sized corn or wheat
-                    tortilla topped with a filling.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-primary btn-chonmon">Thêm</button>
-                    </div>
-                    <small class="price">25.000</small>
-                </div>
-            </div>
-        </div>
-        </div>
-
-        <h1 style="text-align: center;"></h1>
-        <h1 style="text-align: center; color: rgb(49, 2, 6); font-weight: bold; margin-top: 1.5em;">Giỏ hàng</h1>
-        <table class="table" style="font-size: 1.5em;">
-            <thead class="thead-dark" style="background-color: rgb(10, 112, 112); color: white;">
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Tên</th>
-                    <th scope="col" style="width: 33%;">Giá</th>
-                    <th scope="col">Số lượng</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Burrito</td>
-                    <td>30.000</td>
-                    <td class="cart-quantity cart-column">
-                        <input class="cart-quantity-input" type="number" value="1">
-                        <button class="btn btn-danger" type="button">Xóa</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Enchilada</td>
-                    <td>50.000</td>
-                    <td class="cart-quantity cart-column">
-                        <input class="cart-quantity-input" type="number" value="1">
-                        <button class="btn btn-danger" type="button">Xóa</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Mollete</td>
-                    <td>35.000</td>
-                    <td class="cart-quantity cart-column">
-                        <input class="cart-quantity-input" type="number" value="1">
-                        <button class="btn btn-danger" type="button">Xóa</button>
-                    </td>
-                </tr>
-            </tbody>
-
-        </table>
-        <div class="w-100">
-            <button type="button" class="float-end btn btn-lg btn-outline-success" style="font-size: 1.3em;">Đặt món</button>
-        </div>
-        
-
     </main>
-    <section class="">
-        <!-- Footer -->
-        <footer class="bg-dark text-white">
-            <!-- Grid container -->
-            <div class="container p-4">
-                <!--Grid row-->
-                <div class="row">
-                    <!--Grid column-->
-                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">ABC RESTAURANT</h5>
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">ABC RESTAURANT</h5>
 
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-                            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
-                            aliquam voluptatem veniam, est atque cumque eum delectus sint!
-                        </p>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Links</h5>
-
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="#!" class="text-white">abcrestaurant.com</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">abcrestaurant.com</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">abcrestaurant.com</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">abcrestaurant.com</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase mb-0">Links</h5>
-
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#!" class="text-white">abcrestaurant.com</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">abcrestaurant.com</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">abcrestaurant.com</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">abcrestaurant.com</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--Grid column-->
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                        molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+                        aliquam voluptatem veniam, est atque cumque eum delectus sint!
+                    </p>
                 </div>
-                <!--Grid row-->
-            </div>
-            <!-- Grid container -->
+                <!--Grid column-->
 
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                © 2021 Copyright:
-                <a class="text-white" href="https://mdbootstrap.com/">ABCRestaurant.com</a>
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white">abcrestaurant.com</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">abcrestaurant.com</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">abcrestaurant.com</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">abcrestaurant.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-0">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="text-white">abcrestaurant.com</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">abcrestaurant.com</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">abcrestaurant.com</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">abcrestaurant.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
             </div>
-            <!-- Copyright -->
-        </footer>
-        <!-- Footer -->
-    </section>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">ABCRestaurant.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 </body>
 
 </html>

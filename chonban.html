@@ -12,21 +12,39 @@
     <link rel="icon" href="img/logo.jpg" sizes="16x16" type="image/png">
 </head>
 
-<body style="text-align: center;">
-    <p class="fw-light" style="font-size: 4em; margin-top: 0.8em;">ABC RESTAURANT</p>
+<body>
+    <div style="text-align: center; padding-top: 0.8em;height: 100vh;">
+        <p class="fw-light" style="font-size: 4em; margin-top: 0.8em;">ABC RESTAURANT</p>
 
-    <h3>Scan QR CODE</h3>
-    <div class="qrcode-container">
-        <img class="qrcode" src="img/scanqrcode.png" style="width: 200px;" alt="QRCode">
-    </div>
-    <br>
-    <h3 style="margin-bottom: 0.7em;">Hoặc nhập mã bàn tại đây:</h3>
-    <form style="text-align: center;">
-        <input style="font-size: 1.5em;" type="Mã bàn" placeholder="Mã bàn" aria-label="Mã bàn">
+        <h3>Scan QR CODE</h3>
+        <div class="qrcode-container">
+            <img class="qrcode" src="img/scanqrcode.png" style="width: 200px;" alt="QRCode">
+        </div>
         <br>
-        <button class="btn btn-outline-success" style="font-size: 1.2em; margin-top: 0.3em;" type="submit">Đồng ý</button>
-    </form>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        <h3 style="margin-bottom: 0.7em;">Hoặc nhập mã bàn tại đây:</h3>
+        <div style="text-align: center;">
+            <input style="font-size: 1.5em;" class="table-code" type="Mã bàn" placeholder="Mã bàn" aria-label="Mã bàn">
+            <br>
+            <a href="chonmon.html"><button class="btn btn-outline-success" style="font-size: 1.2em; margin-top: 0.3em;">Đồng ý</button></a>
+        </div>
+    </div>
+    <style type="text/css">
+    .table-code {
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+    </style>
 </body>
 
 </html>
